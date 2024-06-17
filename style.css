@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagecontainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.titled {
+    text-align: center;
+}
+
+.imagetrio {
+    height: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.bigimg {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+footer {
+    text-align: center;
+}
+
+.glide__slide {
+    width: 300px;
+    height: 200px;
+}
+
+.glide h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.glide__arrow {
+    width: 50px;
+}
+
+.glide {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .bigimg {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .glide__slide {
+        width: 300px;
+    }
+    .glide__slides {
+        width: 100%;
+    }
+    .glide__bullets {
+        position: absolute;
+        bottom: 10px;
+        width: 20%;
+        text-align: center;
+        z-index: 10;
+    }
+    .imagetrio {
+        width: 100vw;
+        grid-template-columns: 1fr;
+    }
+    .img {
+        height: 25vh;
+    }
+    .imagelist {
+        width: 100%;
+    }
+    .image {
+        border-bottom: 1px solid grey;
+        padding: 10px;
+        width: 100%;
+    }
+    .image img {
+        position: relative;
+        right: 80px;
+    }
+    .image button {
+        position: relative;
+        left: 100px;
+        bottom: 70px;
+    }
+    .image h5 {
+        position: relative;
+        left: 110px;
+        top: 50px;
+    }
+}
+
+.imagelist {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.button {
+    color: white;
+    background-color: rgb(31, 31, 255);
+    padding: 5px;
+}
+
+.image {
+    margin: 10px;
+    width: 160px;
+}
+
+.listimg {
+    width: 160px;
+    height: 200px;
+}
